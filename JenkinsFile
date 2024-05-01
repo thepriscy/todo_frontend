@@ -8,11 +8,11 @@ pipeline {
         }
     }
     stages {
-        stage('Code Checkout') {
-            steps {
-                git 'clone'
-            }
-        }
+        // stage('Code Checkout') {
+        //     steps {
+        //         git 'clone'
+        //     }
+        // }
         stage('Build') {
             steps {
                 sh 'npm install'
