@@ -1,9 +1,11 @@
 # frontend
+This repository is part of a microservice application example originally forked from [elgris/microservice-app-example](https://github.com/elgris/microservice-app-example).
+
 
 UI for sample distributed TODO app build with VueJS
 
 ## Configuration
-- `PORT` - a port the application binds to 
+- `PORT` - a port the application binds to
 - `AUTH_API_ADDRESS` - address of `auth-api` for authentication
 - `TODOS_API_ADDRESS` - address of `todos-api` for TODO CRUD
 
