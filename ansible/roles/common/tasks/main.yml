@@ -1,0 +1,27 @@
+---
+# tasks file for common
+
+- name: Update system packages
+  apt:
+    update_cache: yes
+
+- name: Install required packages
+  apt:
+    name: "{{ item }}"
+    state: present
+  loop:
+    - python3
+    - python3-pip
+    - git
+    - wget
+    - unzip
+    - nodejs
+    - npm
+    - docker
+  # tags: [common_packages]
+
+- name: Start Docker
+  services:
+    name: docker
+    state: start
+    enabled: true

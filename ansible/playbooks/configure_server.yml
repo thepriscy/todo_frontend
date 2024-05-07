@@ -1,0 +1,6 @@
+---
+- name: Configure server
+  hosts: dev-servers
+  become: true
+  roles:
+    - common
